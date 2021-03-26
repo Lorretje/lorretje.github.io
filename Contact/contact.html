@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="This is an awesome website"/>
+    <title>Portfolio Annelore Visker</title>
+    <link rel="stylesheet" href="contact.css"/>
+    <link rel="stylesheet" href="../basic.css"/>
+    <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+</head>
+
+<body>
+<header>
+    <img class="logo"
+         src="../Pics/namebrandlogo_transparent.png"
+         alt="BrandingLogo"/>
+    <!--            height="30px"-->
+
+    <nav>
+        <ul class="nav__links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../About/about.html">About</a></li>
+            <li><a href="../Projects/gallery.html">Gallery</a></li>
+            <li><a href="../Downloads/down.html">Downloads</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="container">
+        <div class="im1">
+            <img src="Profielfoto.jpeg" alt="Image Social"/>
+        </div>
+
+        <div class="in">
+            <h1>Get social with me</h1>
+            Fill in form ...
+            <form name="contact" method="POST" data-netlify="true">
+                <p>
+                    <label>Your Name: <input type="text" name="name"/></label>
+                </p>
+                <p>
+                    <label>Your Email: <input type="email" name="email"/></label>
+                </p>
+                <p>
+                    <label for="wishes">Your Wish:</label>
+                    <select id="wishes" name="wishes">
+                        <option value="w1">Wish 1</option>
+                        <option value="w2">Wish 2</option>
+                        <option value="w3">Wish 3</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Message: <textarea name="message"></textarea></label>
+                </p>
+                <p>
+                    <button type="submit">Send</button>
+                </p>
+            </form>
+        </div>
+
+        <div class="me">
+            <h1>My contact details</h1>
+            <a>annelorevisker@gmail.com</a> <br/>Eindhoven, NL<br/>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="308" height="333"
+                            id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=Eindhoven&t=&z=7&ie=UTF8&iwloc=&output=embed"
+                    ></iframe>
+                    <a href="https://www.whatismyip-address.com"></a>
+                </div>
+                <style>
+                    .mapouter {
+                        position: relative;
+                        text-align: right;
+                        height: 333px;
+                        width: 308px;
+                    }
+
+                    .gmap_canvas {
+                        overflow: hidden;
+                        background: none !important;
+                        height: 333px;
+                        width: 308px;
+                    }
+                </style>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <ul>
+        <li>
+            <a href="https://www.linkedin.com/in/annelore-visker/"><i class="fa fa-linkedin-square fa_custom"></i>LinkedIn</a>
+        </li>
+    </ul>
+</footer>
+</body>
+</html>

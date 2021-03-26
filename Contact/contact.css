@@ -1,0 +1,58 @@
+.container {
+  height: 100%;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 40px auto;
+  grid-template-areas:
+    "m1 m1 m1 m1 m1 m1 m1 m1 m1 m1 m1 m1"
+    "w w w w w w w p p p p p";
+}
+
+.im1 {
+  grid-area: m1;
+}
+.im2 {
+  grid-area: m2;
+}
+
+.in {
+  grid-area: w;
+  display: flex;
+  flex-direction: column;
+}
+
+.me {
+  grid-area: p;
+  display: flex;
+  flex-direction: column;
+}
+
+/*ul {*/
+/*  list-style-type: none;*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*  overflow: hidden;*/
+/*  background-color: burlywood;*/
+/*}*/
+
+/*li {*/
+/*  float: left;*/
+/*}*/
+
+/*li a {*/
+/*  display: block;*/
+/*  color: white;*/
+/*  text-align: center;*/
+/*  padding: 14px 16px;*/
+/*  text-decoration: none;*/
+/*}*/
+
+/*!* Change the link color on hover *!*/
+/*li a:hover {*/
+/*  background-color: turquoise;*/
+/*}*/
+
+.fa_custom {
+  color: #0099cc;
+}

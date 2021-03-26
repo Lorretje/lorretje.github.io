@@ -1,0 +1,70 @@
+.container {
+  height: 100%;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 40px auto auto;
+  grid-template-areas:
+    "m1 m1 m1 m1 m2 m2 m2 m2 m3 m3 m3 m3"
+    "w w w w w w w w w w w w"
+    "p p p p b b b b a a a a";
+}
+
+.im1 {
+  grid-area: m1;
+}
+.im2 {
+  grid-area: m2;
+}
+.im3 {
+  grid-area: m3;
+}
+
+.Intro {
+  grid-area: w;
+}
+
+.DescrProj {
+  grid-area: p;
+  display: flex;
+  flex-direction: column;
+}
+.DescrBlog {
+  grid-area: b;
+  display: flex;
+  flex-direction: column;
+}
+.DescrAbout {
+  grid-area: a;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: burlywood;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: turquoise;
+}
+
+.fa_custom {
+  color: #0099cc;
+}
