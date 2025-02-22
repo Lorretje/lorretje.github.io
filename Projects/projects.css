@@ -1,0 +1,124 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #007acc;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+}
+
+.nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 50px;
+}
+
+.projects-section h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.projects-category {
+  margin-bottom: 50px;
+}
+
+.projects-category h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.projects-category p {
+  margin-bottom: 20px;
+}
+
+.projects-list {
+  list-style-type: none;
+}
+
+.projects-list li {
+  display: flex; /* Align image and text horizontally */
+  align-items: center; /* Center-align image with text */
+  margin-bottom: 20px;
+}
+
+/* Project Images */
+.project-image {
+  width: 100px; /* Thumbnail size */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 15px; /* Space between image and text */
+}
+
+.project-image:hover {
+  transform: scale(1.1);
+  transition: transform .3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Project Links */
+a {
+  color: #007acc; /* Match site theme */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Progress Bar */
+.progress-bar-container {
+  margin-top: 10px; /* Space above progress bar */
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0; /* Light gray background for bar */
+  height: 10px; /* Height of the progress bar */
+}
+
+.progress-bar span {
+  display: block; /* Ensure it takes up the full height of the parent */
+  height: 100%;
+  background-color: #007acc; /* Blue for progress indicator */
+}
+
+/* Footer */
+.footer {
+  background-color: #333; /* Dark footer background */
+  color: white; /* White text for contrast */
+}
+
+.footer-content {
+  display: flex; /* Flexbox layout for footer columns */
+  justify-content: space-between; /* Space between each column */
+  padding: 20px;
+}
+
+.footer-column {
+  flex-basis: calc(33.33% - (20px /2));
+}
+.footer-column h3

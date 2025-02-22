@@ -1,106 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="description" content="This is an awesome website"/>
-    <title>Portfolio Annelore Visker</title>
-    <link rel="stylesheet" href="contact.css"/>
-    <link rel="stylesheet" href="../basic.css"/>
-    <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
-    />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="contact.css">
 </head>
-
 <body>
-<header>
-    <img class="logo"
-         src="../Pics/namebrandlogo_transparent.png"
-         alt="BrandingLogo"/>
-    <!--            height="30px"-->
-
-    <nav>
-        <ul class="nav__links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../About/about.html">About</a></li>
-            <li><a href="../Projects/gallery.html">Gallery</a></li>
-            <li><a href="../Downloads/down.html">Downloads</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">MyLogo</div>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../About/about.html">About Me</a>
+      <a href="../Projects/projects.html">Projects</a>
+      <a href="../Blog/blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
     </nav>
-</header>
+  </header>
 
-<main>
-    <div class="container">
-        <div class="im1">
-            <img src="Profielfoto.jpeg" alt="Image Social"/>
-        </div>
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h1>Contact Me</h1>
+    <p>If you have any questions, opportunities, or just want to say hello, feel free to reach out using the form below or through my contact details.</p>
 
-        <div class="in">
-            <h1>Get social with me</h1>
-            Fill in form ...
-            <form name="contact" method="POST" data-netlify="true">
-                <p>
-                    <label>Your Name: <input type="text" name="name"/></label>
-                </p>
-                <p>
-                    <label>Your Email: <input type="email" name="email"/></label>
-                </p>
-                <p>
-                    <label for="wishes">Your Wish:</label>
-                    <select id="wishes" name="wishes">
-                        <option value="w1">Wish 1</option>
-                        <option value="w2">Wish 2</option>
-                        <option value="w3">Wish 3</option>
-                        <option value="other">Other</option>
-                    </select>
-                </p>
-                <p>
-                    <label>Message: <textarea name="message"></textarea></label>
-                </p>
-                <p>
-                    <button type="submit">Send</button>
-                </p>
-            </form>
-        </div>
+    <!-- Contact Form -->
+    <div class="contact-form-container">
+      <form id="contactForm" class="contact-form" novalidate>
+        <!-- Name Field -->
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <span class="error-message" id="nameError"></span>
 
-        <div class="me">
-            <h1>My contact details</h1>
-            <a>annelorevisker@gmail.com</a> <br/>Eindhoven, NL<br/>
-            <div class="mapouter">
-                <div class="gmap_canvas">
-                    <iframe width="308" height="333"
-                            id="gmap_canvas"
-                            src="https://maps.google.com/maps?q=Eindhoven&t=&z=7&ie=UTF8&iwloc=&output=embed"
-                    ></iframe>
-                    <a href="https://www.whatismyip-address.com"></a>
-                </div>
-                <style>
-                    .mapouter {
-                        position: relative;
-                        text-align: right;
-                        height: 333px;
-                        width: 308px;
-                    }
+        <!-- Email Field -->
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <span class="error-message" id="emailError"></span>
 
-                    .gmap_canvas {
-                        overflow: hidden;
-                        background: none !important;
-                        height: 333px;
-                        width: 308px;
-                    }
-                </style>
-            </div>
-        </div>
+        <!-- Message Field -->
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+        <span class="error-message" id="messageError"></span>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
     </div>
-</main>
 
-<footer>
-    <ul>
-        <li>
-            <a href="https://www.linkedin.com/in/annelore-visker/"><i class="fa fa-linkedin-square fa_custom"></i>LinkedIn</a>
-        </li>
-    </ul>
-</footer>
+    <!-- Contact Details -->
+    <div class="contact-details">
+      <h2>Contact Information</h2>
+      <p><strong>Email:</strong> example@example.com</p>
+      <p><strong>Phone:</strong> +123-456-7890</p>
+      <p><strong>Location:</strong> City, Country</p>
+
+      <!-- Social Media Links -->
+      <div class="social-media-links">
+        Follow me on:
+        <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- Google Maps Embed -->
+    <div class="google-maps">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-122.41941548468192!3d37.77492927975933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085814d9f5b6b83%3A0x8c9e8c9e8c9e8c9e!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2s"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Footer Content -->
+    <div class="footer-content">
+
+      <!-- Quick Links Column -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info Column -->
+      <div class="footer-column">
+        <h3>Contact Info</h3>
+        <p>Email: example@example.com</p>
+        <p>Phone: +123-456-7890</p>
+        <p>Location: City, Country</p>
+      </div>
+
+      <!-- Social Media Column -->
+      <div class="footer-column">
+        <h3>Follow Me</h3>
+        <ul class="social-links">
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Copyright Notice -->
+    &copy; 2025 My Portfolio. All Rights Reserved.
+  </footer>
+
+  <!-- JavaScript for Form Validation -->
+  <script src="./contact.js"></script>
+
 </body>
 </html>

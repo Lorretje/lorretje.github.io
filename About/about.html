@@ -1,92 +1,184 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="This is an awesome website" />
-    <title>Design Portfolio Annelore Visker</title>
-    <link rel="stylesheet" href="about.css" />
-    <link rel="stylesheet" href="../basic.css" />
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  <!-- Header (Same as Home Page) -->
+  <header class="header">
+    <div class="logo">MyLogo</div>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="../Projects/projects.html">Projects</a>
+      <a href="../Blog/blog.html">Blog</a>
+      <a href="../Contact/contact.html">Contact</a>
+    </nav>
+  </header>
 
-  <body>
-    <div class="hero-wrapper">
-      <div class="wrapper">
-        <header>
-          <img src="Pics/namebrandlogo_transparent.png" alt="BrandingLogo" />
+  <!-- About Section -->
+  <section class="about-section">
+    <h2>My Journey as a Developer</h2>
 
-          <nav>
-            <ul>
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="../Projects/gallery.html">Gallery</a></li>
-              <li><a href="../Downloads/down.html">Downloads</a></li>
-              <li><a href="../Contact/contact.html">Contact</a></li>
-            </ul>
-          </nav>
-        </header>
+    <!-- Add Professional Photo Here -->
+    <img src="../Pics/namebrandlogo_transparent.png" alt="Professional Photo" class="profile-picture">
 
-        <div class="hero-content">
-          <h1>I help millions of people learn stuff</h1>
-          <p class="subtitle">Teaching UI / UX &amp; Frontend Development</p>
-        </div>
-      </div>
-    </div>
+    <!-- Storytelling Elements -->
+    Example text: <br>
+    I started my journey in web development during college when I built my first website for a school project—a simple blog using HTML/CSS/JavaScript. Since then, I've grown passionate about creating user-friendly interfaces and solving real-world problems through technology.<br><br>
 
-    <div class="light-purple-wrapper">
-      <div class="wrapper">
-        <ul class="stats">
-          <li><strong>26.5M</strong><span>YouTube Views</span></li>
-          <li><strong>535K</strong><span>YouTube Subs</span></li>
+    One funny anecdote is when I accidentally deleted an entire project's codebase while trying to refactor it! It was frustrating but taught me the importance of version control systems like Git.<br><br>
+
+    Professionally, some highlights include working on [Project Name], which involved building a responsive e-commerce site using React.js for [Client Name]. This experience not only honed my frontend skills but also showed me how impactful well-designed digital solutions can be for businesses.<br><br>
+
+    My "why" is rooted in making technology accessible to everyone through intuitive design principles and innovative solutions that solve everyday challenges.<br><br>
+
+    Outside of coding, I enjoy hiking and exploring new outdoor spots—a hobby that keeps me grounded amidst all the screen time!
+
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about-me" class="carousel-section">
+    <h1>About My Journey</h1>
+    <p>Explore the highlights of my journey: where I started, what I’m doing now, and where I’m headed next.</p>
+
+    <!-- Carousel Container -->
+    <div class="carousel-container">
+      <!-- Play Back -->
+      <div class="slide active" id="play-back">
+        <div class="icon">⏪</div>
+        <h2>Play Back</h2>
+        <p>I began my journey in [Year] when I started studying [Field of Study].
+          During this time, I developed strong foundations in [Key Skills].
+          After graduating, I worked on several projects that helped me refine my skills in [Specific Areas].
+          Some key milestones include:
+        </p>
+          <ul>
+            <li>Completing an internship at XYZ Corporation.</li>
+            <li>Participating in coding competitions to improve problem-solving skills.</li>
+          </ul>
+        <p>
+          These experiences not only honed my technical abilities but also taught me valuable lessons about teamwork and communication.
+        </p>
+        <p>In the past, I struggled to showcase my skills effectively. My GitHub repositories were disorganized, and I lacked a cohesive platform to present my projects and achievements. Key milestones include:</p>
+        <ul>
+          <li>Completed foundational education in web development.</li>
+          <li>Worked on small projects to hone my skills.</li>
+          <li>Received feedback about the importance of a portfolio website.</li>
+        </ul>
+        <ul class="certifications-list">
+          <li><strong>Full Stack Web Development Certification</strong> - <em>University of XYZ</em> (2020)</li>
+          <li><strong>JavaScript Developer Certification</strong> - <em>Coursera</em> (2019)</li>
+          <li><strong>Responsive Web Design Certification</strong> - <em>freeCodeCamp</em> (2018)</li>
         </ul>
       </div>
 
-      <div class="extended-wrapper carousal-container">
-        <img
-          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/arrow_copy_copy.svg"
-          id="left-arrow"
-          class="arrows"
-          alt="Move testimonials to the left"
-        />
-
-        <ul class="carousal">
-          <li>
-            <blockquote>"Gary is a life saver. I'm really close."</blockquote>
-            <cite>Jane Doe</cite>
-          </li>
-          <li>
-            <blockquote>"Gary is a life saver. I'm really close."</blockquote>
-            <cite>John Doe</cite>
-          </li>
+      <!-- Now -->
+      <div class="slide" id="now">
+        <div class="icon">⏯️</div>
+        <h2>Now</h2>
+        <p>Currently, I’m focused on expanding my skill set to include frontend development with React.js and backend development with Node.js. My recent projects include:</p>
+        <ul>
+          <li>Building responsive web applications using TailwindCSS.</li>
+          <li>Creating RESTful APIs for scalable backend systems.</li>
         </ul>
+        <p>I am currently focused on building a personal branding portfolio that reflects my journey, skills, and aspirations. Key features include:</p>
+        <ul>
+          <li>A homepage with an introduction and links to key sections.</li>
+          <li>An "About Me" section using this "Play Back, Now, Next" structure.</li>
+          <li>A "Projects" section showcasing my best work with live demos.</li>
+          <li>A blog where I share tutorials and insights about web development.</li>
+        </ul>
+        <p><strong>Success Metrics:</strong></p>
+        <ul>
+          <li>Increased LinkedIn profile views by 50% since launching the portfolio.</li>
+          <li>Received inquiries from three potential employers within the first month.</li>
+        </ul>
+        <ul class="certifications-list">
+          <li><strong>React Developer Certification</strong> - <em>Udemy</em> (In Progress)</li>
+          <li><strong>Cloud Practitioner Certification</strong> - <em>AWS Academy</em> (In Progress)</li>
+        </ul>
+      </div>
 
-        <img
-          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/arrow_copy_copy.svg"
-          id="right-arrow"
-          class="arrows right"
-          alt="Move testimonials to the right"
-        />
+      <!-- Next -->
+      <div class="slide" id="next">
+        <div class="icon">⏩</div>
+        <h2>Next</h2>
+        <p>Looking ahead, my goal is to specialize further in full-stack development while exploring emerging technologies. In the future, I aim to:</p>
+        <ul>
+          <li>Integrate AI into web applications using TensorFlow.js.</li>
+          <li>Contribute to open-source projects that make a meaningful impact.</li>
+        </ul>
+        <p>My vision is to establish myself as a thought leader in web development while continuously updating my portfolio. Future goals include:</p>
+        <ul>
+          <li>Adding advanced features like dark mode and search functionality.</li>
+          <li>Working on larger-scale projects to showcase full-stack skills.</li>
+          <li>Writing more comprehensive blog posts about solving real-world problems.</li>
+          <li>Collaborating on open-source projects and speaking at developer meetups.</li>
+        </ul>
+        <p><strong>Roadmap:</strong></p>
+        <table border="1" style="margin: auto;">
+          <tr><th>Timeline</th><th>Action Item</th></tr>
+          <tr><td>Next 3 Months</td><td>Add advanced features (dark mode, search bar).</td></tr>
+          <tr><td>Next 6 Months</td><td>Publish 5 new blog posts on trending tech topics.</td></tr>
+          <tr><td>Next 12 Months</td><td>Contribute to at least 2 open-source projects.</td></tr>
+          <tr><td>Beyond 12 Months</td><td>Speak at local developer meetups or conferences.</td></tr>
+        </table>
+        <ul class="certifications-list">
+          <li><strong>Advanced React and GraphQL Certification</strong> - Planned for 2025</li>
+          <li><strong>Kubernetes Administrator Certification</strong> - Planned for 2026</li>
+          <li><strong>Machine Learning Specialist Certification</strong> - Planned for 2026+</li>
+        </ul>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <button id="prev-btn" class="carousel-btn">◀️ Previous</button>
+      <button id="next-btn" class="carousel-btn">Next ▶️</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-column">
+        <h3>Contact Info</h3>
+        <p>Email: example@example.com</p>
+        <p>Phone: +123-456-7890</p>
+        <p>Location: City, Country</p>
+      </div>
+
+      <!-- Social Links -->
+      <div class="footer-column">
+        <h3>Follow Me</h3>
+        <ul class="social-links">
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
       </div>
     </div>
 
-    <div class="wrapper move-up v-padding">
-      <h2>Companies I've worked with..</h2>
+    <!-- Footer Bottom -->
+    <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+  </footer>
 
-      <ul class="companies">
-        <li>
-          <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/skillshare.svg"
-            alt="skillshare"
-            class="skillshare"
-          />
-        </li>
-        <li>
-          <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/ps.svg"
-            alt="Pluralsight"
-            class="ps"
-          />
-        </li>
-      </ul>
-    </div>
-  </body>
+  <!-- JavaScript for Carousel -->
+  <script src="about.js"></script>
+
+</body>
 </html>

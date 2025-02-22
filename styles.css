@@ -1,0 +1,76 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #007acc;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+}
+
+.nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Image Section */
+.image-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.image-section img {
+  width: calc(33.33% - 20px); /* Responsive width */
+}
+
+/* Welcome Section */
+.welcome-section {
+  text-align: center;
+  padding: 50px;
+}
+
+.welcome-section h1 {
+  font-size: 36px;
+}
+
+.welcome-section p {
+  margin-top: 10px;
+}
+
+/* Website Overview Section */
+.overview-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.overview-card {
+  width: calc(33.33% - 20px);
+}
+
+.overview-card h2 {
+  font-size: larger;
+}

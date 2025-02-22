@@ -1,67 +1,85 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="This is an awesome website" />
-    <title>Design Portfolio Annelore Visker</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="basic.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
-    />
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">MyLogo</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="About/about.html">About Me</a>
+      <a href="Projects/projects.html">Projects</a>
+      <a href="Blog/blog.html">Blog</a>
+      <a href="Contact/contact.html">Contact</a>
+    </nav>
+  </header>
 
-  <body>
-    <header>
-      <img src="Pics/namebrandlogo_transparent.png" alt="BrandingLogo" />
+  <!-- Image Section -->
+  <section class="image-section">
+    <img src="image1.jpg" alt="Image 1">
+    <img src="image2.jpg" alt="Image 2">
+    <img src="image3.jpg" alt="Image 3">
+  </section>
 
-      <nav>
+  <!-- Welcome Section -->
+  <section class="welcome-section">
+    <h1>Welcome to My Portfolio</h1>
+    <p>"Crafting Modern Web Experiences"</p>
+  </section>
+
+  <!-- Website Overview Section -->
+  <section class="overview-section">
+    <div class="overview-card">
+      <h2>About Me</h2>
+      <p>Learn more about my background, skills, and journey as a developer.</p>
+      <a href="#about">Read More</a>
+    </div>
+    <div class="overview-card">
+      <h2>Projects</h2>
+      <p>Explore the projects I've worked on, showcasing my expertise in web development.</p>
+      <a href="#projects">View Projects</a>
+    </div>
+    <div class="overview-card">
+      <h2>Blog</h2>
+      <p>Dive into my thoughts, tutorials, and technical insights on web development.</p>
+      <a href="#blog">Visit Blog</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Quick Links</h3>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="About/about.html">About</a></li>
-          <li><a href="Projects/gallery.html">Gallery</a></li>
-          <li><a href="Downloads/down.html">Downloads</a></li>
-          <li><a href="Contact/contact.html">Contact</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
-    </header>
-
-    <main>
-      <div class="container">
-        <div class="im1">
-          <img src="Profielfoto.jpeg" alt="Selfie of Annelore" />
-        </div>
-
-        <div class="im2">
-          <img src="Profielfoto.jpeg" alt="Selfie of Annelore" />
-        </div>
-
-        <div class="im3">
-          <img src="Profielfoto.jpeg" alt="Selfie of Annelore" />
-        </div>
-
-        <div class="Intro">
-          Hello, <br />I am Annelore Visker, <br />the enthusiastic web/app
-          designer.
-        </div>
-
-        <div class="DescrAbout">About</div>
-
-        <div class="DescrProj">Gallery</div>
-
-        <div class="DescrDownl">Downloads</div>
       </div>
-    </main>
+      <div class="footer-column">
+        <h3>Contact Info</h3>
+        <p>Email: example@example.com</p>
+        <p>Phone: +123-456-7890</p>
+        <p>Location: City, Country</p>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Me</h3>
+        <ul class="social-links">
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+  </footer>
 
-    <footer>
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/annelore-visker/"
-            ><i class="fa fa-linkedin-square fa_custom"> LinkedIn</i></a
-          >
-        </li>
-      </ul>
-    </footer>
-  </body>
+</body>
 </html>
