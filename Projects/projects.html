@@ -4,20 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Projects</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="projects.css">
 </head>
 <body>
   <!-- Header -->
   <header class="header">
-    <div class="logo">MyLogo</div>
+    <div class="logo"><img src="../Pics/namebrandlogo_transparent.png" alt="Professional Photo" class="profile-picture"></div>
     <nav class="nav">
       <a href="../index.html">Home</a>
-      <a href="../About/about.html">About Me</a>
+      <a href="../About/about.html">About</a>
       <a href="projects.html">Projects</a>
       <a href="../Blog/blog.html">Blog</a>
       <a href="../Contact/contact.html">Contact</a>
     </nav>
   </header>
+
+  <section id="projects">
+    <h1>My Projects</h1>
+
+    <!-- Earth Section -->
+    <div class="project-category earth">
+      <h2><i class="fas fa-leaf"></i> Earth</h2>
+      <ul>
+        <li><strong>Gardening App:</strong> A project to help users track plant growth.</li>
+      </ul>
+    </div>
+
+    <!-- Water Section -->
+    <div class="project-category water">
+      <h2><i class="fas fa-water"></i> Water</h2>
+      <ul>
+        <li><strong>Responsive Design:</strong> A fluid website design for all devices.</li>
+      </ul>
+    </div>
+
+    <!-- Fire Section -->
+    <div class="project-category fire">
+      <h2><i class="fas fa-fire"></i> Fire</h2>
+      <ul>
+        <li><strong>Music App:</strong> An app to compose and share music tracks.</li>
+      </ul>
+    </div>
+
+    <!-- Air Section -->
+    <div class="project-category air">
+      <h2><i class="fas fa-wind"></i> Air</h2>
+      <ul>
+        <li><strong>Tennis Tracker:</strong> A dynamic app for tracking tennis matches.</li>
+      </ul>
+    </div>
+
+    <!-- Space Section -->
+    <div class="project-category space">
+      <h2><i class="fas fa-star"></i> Space</h2>
+      <ul>
+        <li><strong>Coding Experiments:</strong> Abstract coding projects showcasing creativity.</li>
+      </ul>
+    </div>
+  </section>
+
 
   <!-- Projects Section -->
   <section class="projects-section">
@@ -32,19 +81,22 @@
           <!-- Project with image and links -->
           <img src="portfolio-v1-thumbnail.jpg" alt="Portfolio v1 Thumbnail" class="project-image">
           <strong>Portfolio Website v1.0:</strong> My first portfolio built using HTML/CSS/JavaScript.
-          [<a href="#" target="_blank">View Demo</a>] [<a href="#" target="_blank">GitHub Repo</a>]
+          <a href="#" target="_blank">View Demo</a>
+          <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
         </li>
         <li>
           <!-- Project with image and links -->
           <img src="ecommerce-thumbnail.jpg" alt="E-commerce Thumbnail" class="project-image">
           <strong>E-commerce Storefront:</strong> A small e-commerce project built using Bootstrap and vanilla JavaScript.
-          [<a href="#" target="_blank">View Demo</a>] [<a href="#" target="_blank">GitHub Repo</a>]
+          <a href="#" target="_blank">View Demo</a>
+          <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
         </li>
         <li>
           <!-- Project with image and links -->
           <img src="weather-app-thumbnail.jpg" alt="Weather App Thumbnail" class="project-image">
           <strong>Weather App:</strong> A weather forecasting app using OpenWeatherMap API and React.js.
-          [<a href="#" target="_blank">View Demo</a>] [<a href="#" target="_blank">GitHub Repo</a>]
+          <a href="#" target="_blank">View Demo</a>
+          <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
         </li>
       </ul>
     </div>
@@ -57,8 +109,8 @@
         <li>
           <!-- Project with progress bar -->
           <img src="task-manager-thumbnail.jpg" alt="Task Manager Thumbnail" class="project-image">
-          <strong>Task Manager App:</strong> A full-stack task management application using React, Node.js, and MongoDB.
-          [<a href="#" target="_blank">GitHub Repo</a>]
+          <strong>Task Manager App: </strong> A full-stack task management application using React, Node.js, and MongoDB.
+          <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
           <!-- Progress Bar -->
           <div class="progress-bar-container">
             Progress:
@@ -69,7 +121,7 @@
           <!-- Project with progress bar -->
           <img src="blog-platform-thumbnail.jpg" alt="Blog Platform Thumbnail" class="project-image">
           <strong>Personal Blog Platform:</strong> A custom blog platform with user authentication and markdown support.
-          [<a href="#" target="_blank">GitHub Repo</a>]
+          <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
           <!-- Progress Bar -->
           <div class="progress-bar-container">
             Progress:
@@ -98,32 +150,18 @@
     <!-- Footer Content -->
     <div class="footer-content">
 
-      <!-- Quick Links Column -->
-      <div class="footer-column">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
       <!-- Contact Info Column -->
       <div class="footer-column">
-        <h3>Contact Info</h3>
-        <p>Email: example@example.com</p>
-        <p>Phone: +123-456-7890</p>
-        <p>Location: City, Country</p>
+        <h5>Contact Info</h5>
+        <p><i class="fas fa-envelope"></i> annelorevisker@gmail.com</p>
       </div>
 
       <!-- Social Media Column -->
       <div class="footer-column">
-        <h3>Follow Me</h3>
+        <h5>Follow Me</h5>
         <ul class="social-links">
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">Twitter</a></li>
+          <li><a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a></li>
         </ul>
       </div>
 

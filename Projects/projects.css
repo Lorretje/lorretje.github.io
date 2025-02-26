@@ -11,6 +11,12 @@ body {
   color: #333;
 }
 
+.water { color: blue; }
+.earth { color: green; }
+.fire { color: orange; }
+.air { color: gray; }
+.space { color: purple; }
+
 /* Header */
 .header {
   display: flex;
@@ -108,7 +114,7 @@ a:hover {
 
 /* Footer */
 .footer {
-  background-color: #333; /* Dark footer background */
+  background-color: darkturquoise; /* Dark footer background */
   color: white; /* White text for contrast */
 }
 
@@ -121,4 +127,7 @@ a:hover {
 .footer-column {
   flex-basis: calc(33.33% - (20px /2));
 }
-.footer-column h3
+
+.footer-column i {
+  font-size: large; /* Adjust icon size */
+}

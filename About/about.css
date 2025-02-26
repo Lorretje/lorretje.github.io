@@ -1,4 +1,8 @@
 /* General Reset */
+:root {
+  --border-radius: 1px lightblue;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +12,47 @@
 body {
   font-family: Arial, sans-serif;
 }
+
+/* Earth */
+.earth {
+  color: green;
+}
+.earth h2 {
+  font-family: 'Moreganic', sans-serif; /* Example font */
+}
+
+/* Water */
+.water {
+  color: blue;
+}
+.water h2 {
+  font-family: 'Wave Burn', sans-serif; /* Example font */
+}
+
+/* Fire */
+.fire {
+  color: orange;
+}
+.fire h2 {
+  font-family: 'Bonfire Typeface', sans-serif; /* Example font */
+}
+
+/* Air */
+.air {
+  color: gray;
+}
+.air h2 {
+  font-family: 'Air Sans', sans-serif; /* Example font */
+}
+
+/* Space */
+.space {
+  color: purple;
+}
+.space h2 {
+  font-family: 'Air Font Family', sans-serif; /* Example font */
+}
+
 
 /* Header */
 .header {
@@ -84,12 +129,25 @@ body {
   color: #666;
 }
 
-
 .carousel-btn {
   margin-top: 20px;
 }
 
 /* Footer */
 .footer {
-  background-color: #333;
+  background-color: darkturquoise; /* Dark footer background */
+  color: white; /* White text for contrast */
+}
+
+.footer-content {
+  display: flex; /* Flexbox layout for footer columns */
+  justify-content: space-between; /* Space between each column */
+  padding: 20px;
+}
+
+.footer-column {
+  flex-basis: calc(33.33% - (20px /2));
+}
+.footer-column i {
+  font-size: large; /* Adjust icon size */
 }

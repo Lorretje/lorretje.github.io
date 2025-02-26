@@ -25,6 +25,7 @@ body {
 .nav a {
   color: white;
   margin-left: 15px;
+  text-decoration: none;
 }
 
 /* Contact Section */
@@ -32,13 +33,13 @@ body {
   padding: 50px;
 }
 
-.contact-section h1 {
+.contact-section {
   text-align: center;
 }
 
-.contact-section p {
-  text-align: center;
-}
+/*.contact-section p {*/
+/*  text-align: center;*/
+/*}*/
 
 /* Contact Form */
 .contact-form-container {
@@ -64,7 +65,27 @@ body {
 .error-message {
 }
 
-/* Social Media */
-.social-media-links i {}
-.social-media-links:hover{}
-.social-media-links
+/*!* Social Media *!*/
+.social-media-links i {
+  font-size: large; /* Adjust icon size */
+}
+
+  /* Footer */
+.footer {
+  background-color: darkturquoise; /* Dark footer background */
+  color: white; /* White text for contrast */
+}
+
+.footer-content {
+  display: flex; /* Flexbox layout for footer columns */
+  justify-content: space-between; /* Space between each column */
+  padding: 20px;
+}
+
+.footer-column {
+  flex-basis: calc(33.33% - (20px /2));
+}
+
+.footer-column i {
+  font-size: large; /* Adjust icon size */
+}

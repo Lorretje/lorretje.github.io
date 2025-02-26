@@ -4,15 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="about.css">
 </head>
 <body>
   <!-- Header (Same as Home Page) -->
   <header class="header">
-    <div class="logo">MyLogo</div>
+    <div class="logo"><img src="../Pics/namebrandlogo_transparent.png" alt="Professional Photo" class="profile-picture"></div>
     <nav class="nav">
       <a href="../index.html">Home</a>
-      <a href="about.html">About Me</a>
+      <a href="about.html">About</a>
       <a href="../Projects/projects.html">Projects</a>
       <a href="../Blog/blog.html">Blog</a>
       <a href="../Contact/contact.html">Contact</a>
@@ -28,42 +32,69 @@
 
     <!-- Storytelling Elements -->
     Example text: <br>
-    I started my journey in web development during college when I built my first website for a school project—a simple blog using HTML/CSS/JavaScript. Since then, I've grown passionate about creating user-friendly interfaces and solving real-world problems through technology.<br><br>
+    I started my journey in web development during college when I built my first website for a school project—a simple blog using HTML/CSS/JavaScript.<br>Since then, I've grown passionate about creating user-friendly interfaces and solving real-world problems through technology.<br><br>
 
-    One funny anecdote is when I accidentally deleted an entire project's codebase while trying to refactor it! It was frustrating but taught me the importance of version control systems like Git.<br><br>
+    One funny anecdote is when I accidentally deleted an entire project's codebase while trying to refactor it!<br>It was frustrating but taught me the importance of version control systems like Git.<br><br>
 
-    Professionally, some highlights include working on [Project Name], which involved building a responsive e-commerce site using React.js for [Client Name]. This experience not only honed my frontend skills but also showed me how impactful well-designed digital solutions can be for businesses.<br><br>
+    Professionally, some highlights include working on [Project Name], which involved building a responsive e-commerce site using React.js for [Client Name].<br>This experience not only honed my frontend skills but also showed me how impactful well-designed digital solutions can be for businesses.<br><br>
 
     My "why" is rooted in making technology accessible to everyone through intuitive design principles and innovative solutions that solve everyday challenges.<br><br>
 
     Outside of coding, I enjoy hiking and exploring new outdoor spots—a hobby that keeps me grounded amidst all the screen time!
+  </section><br>
 
-  </section>
+  <section id="about">
+    <h1>About Me</h1>
+    <p>I am passionate about exploring creativity through various hobbies that align with the five elements.</p><br>
+
+    <div class="about-elements">
+      <div class="about-element earth">
+        <h2><i class="fas fa-leaf"></i> Earth</h2>
+        <p>I love vegetable gardening, which connects me to nature and growth.</p>
+      </div><br>
+      <div class="about-element water">
+        <h2><i class="fas fa-water"></i> Water</h2>
+        <p>Swimming has taught me discipline and adaptability in life.</p>
+      </div><br>
+      <div class="about-element fire">
+        <h2><i class="fas fa-fire"></i> Fire</h2>
+        <p>Singing and playing instruments like the saxophone ignite my passion for creativity.</p>
+      </div><br>
+      <div class="about-element air">
+        <h2><i class="fas fa-wind"></i> Air</h2>
+        <p>Running and tennis keep me agile and energized.</p>
+      </div><br>
+      <div class="about-element space">
+        <h2><i class="fas fa-star"></i> Space</h2>
+        <p>Coding, drawing, and painting allow me to create something out of nothing.</p>
+      </div>
+    </div>
+  </section><br>
 
   <!-- About Me Section -->
   <section id="about-me" class="carousel-section">
-    <h1>About My Journey</h1>
-    <p>Explore the highlights of my journey: where I started, what I’m doing now, and where I’m headed next.</p>
+    <h1>About My Journey</h1><br>
+    <p>Explore the highlights of my journey:<br>where I started, what I’m doing now, and where I’m headed next.</p><br>
 
     <!-- Carousel Container -->
     <div class="carousel-container">
       <!-- Play Back -->
       <div class="slide active" id="play-back">
         <div class="icon">⏪</div>
-        <h2>Play Back</h2>
-        <p>I began my journey in [Year] when I started studying [Field of Study].
-          During this time, I developed strong foundations in [Key Skills].
-          After graduating, I worked on several projects that helped me refine my skills in [Specific Areas].
-          Some key milestones include:
+        <h2>Rewind</h2><br>
+        <p>I began my journey in [Year] when I started studying [Field of Study].<br>
+          During this time, I developed strong foundations in [Key Skills].<br>
+          After graduating, I worked on several projects that helped me refine my skills in [Specific Areas].<br><br>
+          Key milestones:
         </p>
           <ul>
             <li>Completing an internship at XYZ Corporation.</li>
             <li>Participating in coding competitions to improve problem-solving skills.</li>
-          </ul>
+          </ul><br>
         <p>
           These experiences not only honed my technical abilities but also taught me valuable lessons about teamwork and communication.
         </p>
-        <p>In the past, I struggled to showcase my skills effectively. My GitHub repositories were disorganized, and I lacked a cohesive platform to present my projects and achievements. Key milestones include:</p>
+        <p>In the past, I struggled to showcase my skills effectively.<br>My GitHub repositories were disorganized, and I lacked a cohesive platform to present my projects and achievements.<br><br>Key milestones:</p>
         <ul>
           <li>Completed foundational education in web development.</li>
           <li>Worked on small projects to hone my skills.</li>
@@ -79,19 +110,19 @@
       <!-- Now -->
       <div class="slide" id="now">
         <div class="icon">⏯️</div>
-        <h2>Now</h2>
-        <p>Currently, I’m focused on expanding my skill set to include frontend development with React.js and backend development with Node.js. My recent projects include:</p>
+        <h2>Now</h2><br>
+        <p>Currently, I’m focused on expanding my skill set to include frontend development with React.js and backend development with Node.js.<br><br>My recent projects:</p>
         <ul>
           <li>Building responsive web applications using TailwindCSS.</li>
           <li>Creating RESTful APIs for scalable backend systems.</li>
-        </ul>
-        <p>I am currently focused on building a personal branding portfolio that reflects my journey, skills, and aspirations. Key features include:</p>
+        </ul><br>
+        <p>I am currently focused on building a personal branding portfolio that reflects my journey, skills, and aspirations.<br><br>Key features:</p>
         <ul>
           <li>A homepage with an introduction and links to key sections.</li>
           <li>An "About Me" section using this "Play Back, Now, Next" structure.</li>
           <li>A "Projects" section showcasing my best work with live demos.</li>
           <li>A blog where I share tutorials and insights about web development.</li>
-        </ul>
+        </ul><br>
         <p><strong>Success Metrics:</strong></p>
         <ul>
           <li>Increased LinkedIn profile views by 50% since launching the portfolio.</li>
@@ -106,21 +137,21 @@
       <!-- Next -->
       <div class="slide" id="next">
         <div class="icon">⏩</div>
-        <h2>Next</h2>
-        <p>Looking ahead, my goal is to specialize further in full-stack development while exploring emerging technologies. In the future, I aim to:</p>
+        <h2>Next</h2><br>
+        <p>Looking ahead, my goal is to specialize further in full-stack development while exploring emerging technologies.<br><br>In the future, I aim to:</p>
         <ul>
           <li>Integrate AI into web applications using TensorFlow.js.</li>
           <li>Contribute to open-source projects that make a meaningful impact.</li>
-        </ul>
-        <p>My vision is to establish myself as a thought leader in web development while continuously updating my portfolio. Future goals include:</p>
+        </ul><br>
+        <p>My vision is to establish myself as a thought leader in web development while continuously updating my portfolio.<br><br>Future goals:</p>
         <ul>
           <li>Adding advanced features like dark mode and search functionality.</li>
           <li>Working on larger-scale projects to showcase full-stack skills.</li>
           <li>Writing more comprehensive blog posts about solving real-world problems.</li>
           <li>Collaborating on open-source projects and speaking at developer meetups.</li>
-        </ul>
-        <p><strong>Roadmap:</strong></p>
-        <table border="1" style="margin: auto;">
+        </ul><br>
+        <p><strong>Roadmap</strong></p>
+        <table style="margin: auto; border: 2px ridge lightblue;">
           <tr><th>Timeline</th><th>Action Item</th></tr>
           <tr><td>Next 3 Months</td><td>Add advanced features (dark mode, search bar).</td></tr>
           <tr><td>Next 6 Months</td><td>Publish 5 new blog posts on trending tech topics.</td></tr>
@@ -128,9 +159,7 @@
           <tr><td>Beyond 12 Months</td><td>Speak at local developer meetups or conferences.</td></tr>
         </table>
         <ul class="certifications-list">
-          <li><strong>Advanced React and GraphQL Certification</strong> - Planned for 2025</li>
           <li><strong>Kubernetes Administrator Certification</strong> - Planned for 2026</li>
-          <li><strong>Machine Learning Specialist Certification</strong> - Planned for 2026+</li>
         </ul>
       </div>
 
@@ -143,33 +172,18 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-content">
-      <!-- Quick Links -->
-      <div class="footer-column">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
 
       <!-- Contact Info -->
       <div class="footer-column">
-        <h3>Contact Info</h3>
-        <p>Email: example@example.com</p>
-        <p>Phone: +123-456-7890</p>
-        <p>Location: City, Country</p>
+        <h5>Contact Info</h5>
+        <p><i class="fas fa-envelope"></i> annelorevisker@gmail.com</p>
       </div>
 
       <!-- Social Links -->
       <div class="footer-column">
-        <h3>Follow Me</h3>
-        <ul class="social-links">
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">Twitter</a></li>
-        </ul>
+        <h5>Follow Me</h5>
+        <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
       </div>
     </div>
 

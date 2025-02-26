@@ -4,15 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Header -->
   <header class="header">
-    <div class="logo">MyLogo</div>
+    <div class="logo"><img src="Pics/namebrandlogo_transparent.png" alt="Professional Photo"></div>
     <nav class="nav">
       <a href="index.html">Home</a>
-      <a href="About/about.html">About Me</a>
+      <a href="About/about.html">About</a>
       <a href="Projects/projects.html">Projects</a>
       <a href="Blog/blog.html">Blog</a>
       <a href="Contact/contact.html">Contact</a>
@@ -24,12 +28,22 @@
     <img src="image1.jpg" alt="Image 1">
     <img src="image2.jpg" alt="Image 2">
     <img src="image3.jpg" alt="Image 3">
+    <img src="image4.jpg" alt="Image 4">
+    <img src="image5.jpg" alt="Image 5">
   </section>
 
   <!-- Welcome Section -->
   <section class="welcome-section">
     <h1>Welcome to My Portfolio</h1>
-    <p>"Crafting Modern Web Experiences"</p>
+    <p>"Crafting Modern Fluid Web Experiences"</p>
+    <p>Exploring creativity through the harmony of Earth, Water, Fire, Air, and Space.</p>
+    <div class="elements-icons">
+      <div class="element earth"><i class="fas fa-leaf"></i> Earth</div>
+      <div class="element water"><i class="fas fa-water"></i> Water</div>
+      <div class="element fire"><i class="fas fa-fire"></i> Fire</div>
+      <div class="element air"><i class="fas fa-wind"></i> Air</div>
+      <div class="element space"><i class="fas fa-star"></i> Space</div>
+    </div>
   </section>
 
   <!-- Website Overview Section -->
@@ -37,49 +51,42 @@
     <div class="overview-card">
       <h2>About Me</h2>
       <p>Learn more about my background, skills, and journey as a developer.</p>
-      <a href="#about">Read More</a>
+      <a href="./About/about.html">Read More</a>
     </div>
     <div class="overview-card">
       <h2>Projects</h2>
       <p>Explore the projects I've worked on, showcasing my expertise in web development.</p>
-      <a href="#projects">View Projects</a>
+      <a href="./Projects/projects.html">View Projects</a>
     </div>
     <div class="overview-card">
       <h2>Blog</h2>
       <p>Dive into my thoughts, tutorials, and technical insights on web development.</p>
-      <a href="#blog">Visit Blog</a>
+      <a href="./Blog/blog.html">Visit Blog</a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
+    <!-- Footer Content -->
     <div class="footer-content">
+
+      <!-- Contact Info Column -->
       <div class="footer-column">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <h5>Contact Info</h5>
+        <p><i class="fas fa-envelope"></i> annelorevisker@gmail.com</p>
       </div>
+
+      <!-- Social Media Column -->
       <div class="footer-column">
-        <h3>Contact Info</h3>
-        <p>Email: example@example.com</p>
-        <p>Phone: +123-456-7890</p>
-        <p>Location: City, Country</p>
+        <h5>Follow Me</h5>
+        <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
       </div>
-      <div class="footer-column">
-        <h3>Follow Me</h3>
-        <ul class="social-links">
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">Twitter</a></li>
-        </ul>
-      </div>
+
     </div>
     <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
   </footer>
+
 
 </body>
 </html>

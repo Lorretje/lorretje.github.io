@@ -5,10 +5,67 @@
   box-sizing: border-box;
 }
 
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
+
+/* Elements Section */
+#home {
+  text-align: center;
+}
+
+.elements-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.element {
+  margin: 10px;
+}
+
+/* Earth */
+.earth {
+  color: green;
+}
+.earth h2 {
+  font-family: 'Moreganic', sans-serif; /* Example font */
+}
+
+/* Water */
+.water {
+  color: blue;
+}
+.water h2 {
+  font-family: 'Wave Burn', sans-serif; /* Example font */
+}
+
+/* Fire */
+.fire {
+  color: orange;
+}
+.fire h2 {
+  font-family: 'Bonfire Typeface', sans-serif; /* Example font */
+}
+
+/* Air */
+.air {
+  color: gray;
+}
+.air h2 {
+  font-family: 'Air Sans', sans-serif; /* Example font */
+}
+
+/* Space */
+.space {
+  color: purple;
+}
+.space h2 {
+  font-family: 'Air Font Family', sans-serif; /* Example font */
+}
+
+
 
 /* Header */
 .header {
@@ -21,7 +78,9 @@ body {
 
 .logo {
   color: white;
-  font-size: 24px;
+/*  font-size: 24px;*/
+  height: 10%;
+  width: auto;
 }
 
 .nav a {
@@ -74,3 +133,20 @@ body {
 .overview-card h2 {
   font-size: larger;
 }
+
+/* Footer */
+.footer {
+  background-color: darkturquoise; /* Dark footer background */
+  color: white; /* White text for contrast */
+}
+
+.footer-content {
+  display: flex; /* Flexbox layout for footer columns */
+  justify-content: space-between; /* Space between each column */
+  padding: 20px;
+}
+
+.footer-column {
+  flex-basis: calc(33.33% - (20px /2));
+}
+.footer-column h3

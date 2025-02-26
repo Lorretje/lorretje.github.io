@@ -1,3 +1,79 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Earth */
+.earth {
+  color: green;
+}
+.earth h2 {
+  font-family: 'Moreganic', sans-serif; /* Example font */
+}
+
+/* Water */
+.water {
+  color: blue;
+}
+.water h2 {
+  font-family: 'Wave Burn', sans-serif; /* Example font */
+}
+
+/* Fire */
+.fire {
+  color: orange;
+}
+.fire h2 {
+  font-family: 'Bonfire Typeface', sans-serif; /* Example font */
+}
+
+/* Air */
+.air {
+  color: gray;
+}
+.air h2 {
+  font-family: 'Air Sans', sans-serif; /* Example font */
+}
+
+/* Space */
+.space {
+  color: purple;
+}
+.space h2 {
+  font-family: 'Air Font Family', sans-serif; /* Example font */
+}
+
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #007acc;
+}
+
+.logo {
+  color: white;
+/*  font-size: 2px;*/
+}
+
+.nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
 /* Blog Section */
 .blog-section {
   padding: 50px;
@@ -15,7 +91,7 @@
 
 .blog-posts {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
   gap: 20px;
 }
 
@@ -24,7 +100,7 @@
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .blog-thumbnail {
@@ -52,6 +128,22 @@
   text-decoration: underline;
 }
 
-/* Footer (reuse existing footer styles) */
+/* Footer */
 .footer {
+  background-color: darkturquoise; /* Dark footer background */
+  color: white; /* White text for contrast */
+}
+
+.footer-content {
+  display: flex; /* Flexbox layout for footer columns */
+  justify-content: space-between; /* Space between each column */
+  padding: 20px;
+}
+
+.footer-column {
+  flex-basis: calc(33.33% - (20px /2));
+}
+
+.footer-column i {
+  font-size: large; /* Adjust icon size */
 }
